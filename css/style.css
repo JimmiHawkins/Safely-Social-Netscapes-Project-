@@ -143,6 +143,25 @@ h2{
         background-color: #ffffff;
         border-radius: 40px;
         margin-bottom: 20px;
+
+        animation-name: pulse;
+        animation-duration: 1.0s;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(.97);
+           
+        }
+
+        100% {
+            transform: scale(1);
+        
+        }
     }
 
         .welcome-heading{
