@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica;
+    
+}
+
+body{
+    min-height: 100vh;
+    background-color: #efefef;
+    
+}
+
+h1{
+    color: #222222;
+    margin: 20px;
+    font-size: 50px;
+    font-family: helvetica;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #222222;
+    padding: 17px 40px;
+    border: 0;
+    border-radius: 30px;
+    margin: 40px;
+    background-color: #ffffff;
+}
+
+.header{
+    width: 100vw;
+    height: 15vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efefef;
+    
+}
+
+
+.nav :hover{
+    transition: 400ms;
+    font-size: 22px;
+    background-color:rgb(27, 27, 27);
+    color: #efefef;  
+    
+}
+
+
+
+.divider{
+    display: flex;
+    justify-content: center;
+
+}
+
+    .shape1{
+    height: 10px;
+    width: 24vw;
+    background-color: #f5476d
+
+}
+
+    .shape2{
+    height: 10px;
+    width: 24vw;
+    background-color: #f29bae
+
+}
+
+    .shape3{
+    height: 10px;
+    width: 24vw;
+    background-color: rgb(255, 255, 255);
+
+}
+
+    .shape4{
+    height: 10px;
+    width: 24vw;;
+    background-color: #7af5e3
+
+}
+
+.content{
+    margin: 20px;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+}
+
+    .welcome-box{
+        width: 100vw;
+        height: auto;
+        background-color: #ffffff;
+        border-radius: 40px;
+        margin-bottom: 20px;
+    }
+
+        .welcome-heading{
+           text-align: center;
+           margin: 30px;
+        }
+
+        .welcome-body{
+            text-align: center;
+            margin: 30px;
+        }
+
+.nav-panels{
+    display: flex;
+    justify-content: center;
+    
+}
+    #parents-panel{
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        color: #ffffff;
+        border: 0;
+        border-radius: 30px;
+        background-color: #7af5e3;
+        margin-right: 10px;
+        padding: 30px;
+    }
+
+    #teenagers-panel{
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        color: #ffffff;
+        border: 0;
+        border-radius: 30px;
+        background-color: #f5476d;
+        margin-left: 10px;
+        padding: 30px;
+        
+    }
+
+
+ 
