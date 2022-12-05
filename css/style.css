@@ -4,20 +4,21 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica;
     border: 0;
+    color: #efefef;
     
     
 }
 
 body{
     min-height: 100vh;
-    background-color: #efefef;
+    background-color: #aca7da;
     margin: 0 50px 0px 50px;
     
     
 }
 
 h1{
-    color: #222222;
+    color: #3d3c4d;
     margin: 20px;
     font-size: 50px;
     font-family: helvetica;
@@ -33,38 +34,62 @@ h1{
 
 h2{
     font-size: 20px;
+    color: #3d3c4d;
+}
+
+#logo{
+ 
+ width: auto;
+ height: 80px;
+
+}
+
+#logo-name{
+    color: #efefef;
+    font-size: 400%;
 }
 
 .btn{
     font-size: 20px;
     background-color: rgb(255, 255, 255);
-    color: #222222;
+    color: #3d3c4d;
     padding: 17px 40px;
     border: 0;
     border-radius: 30px;
-    margin: 40px;
+    margin: 10px;
+
     background-color: #ffffff;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
     
-    height: 10vh;
+    height: 15vh;
     background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #efefef;
+    background-color: #aca7da;
 
     position: relative;
     animation-name: header;
     animation-duration: 2s;
 }
 
+.nav{
+
+}
+
 
 .nav :hover{
     transition: 400ms;
     font-size: 22px;
-    background-color:rgb(27, 27, 27);
+    background-color:#3d3c4d;
     color: #efefef;  
     
 }
@@ -106,15 +131,14 @@ h2{
     .shape3{
     height: 10px;
     width: 24vw;
-    background-color: rgb(255, 255, 255);
-
+    background-color: #c3ddee;
 }
 
     .shape4{
     border-top-right-radius: 130px;
     height: 10px;
     width: 24vw;;
-    background-color: #7af5e3
+    background-color: #aad1eb;
 
 }
 
@@ -140,7 +164,7 @@ h2{
     .welcome-box{
         width: 100vw;
         height: auto;
-        background-color: #ffffff;
+        background-color: #efefef;
         border-radius: 40px;
         margin-bottom: 20px;
 
@@ -174,6 +198,17 @@ h2{
             margin: 30px;
         }
 
+        .welcome-body2{
+            text-align: center;
+            padding: 15px;
+            font-size: 30px;
+            background-color: #f5476d;
+            color: #ffffff;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            text-transform: uppercase;
+        }
+
 .nav-panels{
     display: flex;
     justify-content: space-between;
@@ -190,10 +225,10 @@ h2{
         .parents-panel-btn{
             width: auto;
             height: auto;
-            font-size: 20px;
+            font-size: 30px;
             color: #ffffff;
-            background-color: #7af5e3;
-            padding: 30px;
+            background-color: #aad1eb;
+            padding: 20px;
             border-radius: 100px;
         }
 
@@ -203,17 +238,17 @@ h2{
 
         .parents :hover{
             transition: 400ms;
-            font-size: 22px;
-            background-color:rgb(27, 27, 27);
+            font-size: 30px;
+            background-color:#3d3c4d;
               
         }
 
         #social-graphic{
         
             display: block;
-            padding-top: 30px;
+            
             margin: auto;
-            width: 80%;
+            width: 100%;
         }
     
     .teenagers-panel{
@@ -226,10 +261,10 @@ h2{
         .teenagers-panel-btn{
             width: auto;
             height: auto;
-            font-size: 20px;
+            font-size: 30px;
             color: #ffffff;
             background-color: #f5476d;
-            padding: 30px;
+            padding: 20px;
             border-radius: 100px;
             
         }
@@ -240,8 +275,8 @@ h2{
 
         .teenagers :hover{
             transition: 400ms;
-            font-size: 22px;
-            background-color:rgb(27, 27, 27);
+            font-size: 30px;
+            background-color:#3d3c4d;
               
         }
 
@@ -256,6 +291,7 @@ h2{
 
 .recent-cases-text{
     width: 50vw;
+    
 }
 
     .recent-cases-heading{
@@ -286,6 +322,7 @@ h2{
     justify-content: space-between;
     color: white;
     
+    
 }
 
     .stats-box-left{
@@ -294,15 +331,24 @@ h2{
         text-align: center;
         border-radius: 40px;
         padding: 30px;
+        
     }
 
+        .stats-text-left{
+            color: white;
+        }
+
     .stats-box-right{
-        background-color: #7af5e3;
+        background-color: #aad1eb;
         width: 40vw;
         text-align: center;
         border-radius: 40px;
         padding: 30px;
-       
+        
+    }
+
+    .stats-text-right{
+        color: white;
     }
 
 .find-out-more-container{
@@ -322,7 +368,7 @@ h2{
     .more-box :hover{
         transition: 400ms;
         font-size: 32px;
-        background-color:rgb(27, 27, 27);
+        background-color:#3d3c4d;
         color: #efefef;
     }
 
@@ -330,7 +376,7 @@ h2{
         width: auto;
         height: auto;
         font-size: 30px;
-        color: rgb(27, 27, 27);
+        color: #3d3c4d;
         background-color: #ffffff;
         padding: 20px;
         border-radius: 100px;
