@@ -1,6 +1,6 @@
 console.log("hi")
 
-function dropDownFunction() {
+function dropDownFunction() { //https://www.w3schools.com/howto/howto_js_dropdown.asp
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
