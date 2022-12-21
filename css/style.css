@@ -479,8 +479,7 @@ h2{
       #footer-text{
         text-align: center;
         justify-content: center;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding: 12px;
 
         color: #efefef;
       }
@@ -533,9 +532,21 @@ h2{
         }
       }
       
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 950px) {
+        .recent-cases-container {
+          flex-direction: column;
+        }
+      }
+
+      @media screen and (max-width: 950px) {
         .recent-cases-box {
-          display: none;
+          height: 300px;
+          width: auto;
+          
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 40px;
+
         }
       }
 
@@ -545,7 +556,7 @@ h2{
         }
       }
 
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 950px) {
         .recent-cases-text{
           width: auto;
           text-align: center;
