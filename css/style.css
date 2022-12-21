@@ -11,8 +11,10 @@
 
 body{
     min-height: 100vh;
+   margin: 0px 30px 0 30px;
     background-color: #aca7da;
-    margin: 0 50px 0px 50px;
+   
+    
     
     
 }
@@ -24,6 +26,65 @@ h1{
     font-family: helvetica;
 
 }
+
+.dropdown {
+    position: relative;
+    
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 90px;
+    
+   
+   
+
+  
+
+   
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 200px;
+    text-align: center;
+   
+  }
+  
+  .desc {
+   
+    
+    
+    
+  }
+
+  .dropbtn{
+    background-color: rgb(255, 255, 255,0);
+   
+    
+  }
+  
+  #drop-parents{
+    border-radius: 20px;
+    
+   padding: 20px;
+   
+  }
+
+  #drop-teenagers{
+
+   padding: 10px;
+    
+    border-radius: 20px;
+  }
+
+
+  #menu-icon{
+    width: 60px;
+    margin-left: 20px;
+  }
 
 
 
@@ -47,6 +108,7 @@ h2{
 #logo-name{
     color: #efefef;
     font-size: 400%;
+    margin-left: 10px;
 }
 
 .btn{
@@ -99,8 +161,7 @@ h2{
 .divider{
     display: flex;
     justify-content: center;
-
-    position: relative;
+    
     animation-name: divider;
     animation-duration: 2s;
     
@@ -382,5 +443,125 @@ h2{
         border-radius: 100px;
         
     }
+
+    @media screen and (max-width: 300px) {
+        h1 {
+            
+          font-size: 30px;
+        }
+      }
+
+      @media screen and (max-width: 300px) {
+        h2 {
+            
+          font-size: 16px;
+        }
+      }
+
+      @media screen and (max-width: 300px) {
+        .welcome-body2 {
+            
+          font-size: 16px;
+        }
+      }
+
+    @media screen and (max-width: 625px) {
+        #logo-name {
+            display: none;
+          
+          
+        }
+      }
+
+      @media screen and (max-width: 932px) {
+        .btn {
+          display: none;
+        }
+      }
+      
+      @media screen and (min-width: 932px) {
+        .dropdown {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 932px) {
+        #menu-icon {
+          display: none;
+        }
+      }
+      
+
+
+
+      @media screen and (max-width: 640px) {
+        .header {
+         align-items: center;
+         
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        #logo {
+          
+        }
+      }
+
+
+   
+      @media screen and (max-width: 640px) {
+        .nav-panels {
+          display: none;
+        }
+      }
+      
+      @media screen and (max-width: 640px) {
+        .recent-cases-box {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .stats-container{
+          flex-direction: column;
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .recent-cases-text{
+          width: auto;
+          text-align: center;
+      }
+
+      @media screen and (max-width: 640px) {
+        .stats-box-left{
+          flex-direction: column;
+          width: auto;
+          margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 640px) {
+        .stats-box-right{
+          flex-direction: column;
+          width: auto;
+      }
+
+      @media screen and (max-width: 640px) {
+        .more-btn{
+          font-size: 16px;
+      }
+
+      @media screen and (max-width: 640px) {
+        .find-out-more-container{
+          flex-direction: column;
+          width: auto;
+      }
+
+      @media screen and (max-width: 640px) {
+        .more-graphic{
+          width: 100px;
+      }
+
+      
 
  
