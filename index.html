@@ -6,35 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
-   
+
     <div class="header">
         <div class="logo-container">
             <img id="logo" src="assets/img/logo.png" alt="">
             <h1 id="logo-name">Safely Social</h1>
         </div>
-
-        
-
         
         <div class="nav">
             <button class="btn" id="parents" type="button">Parents</button>
             <button class="btn" id="teenagers" type="button">Teenagers</button>
-            
-
         </div>
 
         <div class="dropdown">
-            
-            <button class="dropbtn"><img id="menu-icon" src="assets/img/menu.png" alt="menu"></button>
-            <div class="dropdown-content">
-              <a id="drop-parents" href="#">Parents</a>
-              <a id="drop-teenagers" href="#">Teenagers</a>
+            <button onclick="dropDownFunction()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Parents Portal</a>
+              <a href="#about">Teenagers Portal</a>
             </div>
-
-        
-      
         </div>
     </div>
 
@@ -70,8 +62,7 @@
                 <img src="assets/img/teenagers-tablet-img.png" alt="image of teenagers">
                 <div class="teenagers">
                     <button class="teenagers-panel-btn" type="button">Teens Portal</button>
-                </div>
-                
+                </div> 
             </div>    
         </div>
 
@@ -83,7 +74,7 @@
             </div>
           
             <div class="recent-cases-box">
-                
+
             </div>
         </div>
 
@@ -103,10 +94,12 @@
                 <button class="more-btn" type="button">Discover more statistics here</button>
             </div>
         </div>
-        </div>
-
     </div>
 
-    
+    <div class="footer">
+            <h2 id="footer-text">Copyright © 2022 Safely Social / All rights reserved</h2>
+    </div>
+
 </body>
+
 </html>
