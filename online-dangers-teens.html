@@ -6,38 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teens: Online Dangers</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
 
     <div class="header">
-        <div class="logo-container">
-            <img id="logo" src="assets/img/logo.png" alt="">
-            <h1 id="logo-name">Safely Social</h1>
-        </div>
-        
-        <div class="nav">
-            <button class="btn" id="parents" type="button">Parents</button>
-            <button class="btn" id="teenagers" type="button">Teenagers</button>
-        </div>
+        <a href="index.html">
+            <div class="logo-container">
+                <img id="logo" src="assets/img/logo.png" alt="">
+                <h1 id="logo-name">Safely Social</h1>
+            </div>
+        </a>
 
+        <div class="nav">
+            <a class="nav-a" href="parents.html">
+                <button class="btn" id="parents" type="button">Parents</button>
+            </a>
+
+            <a class="nav-a" href="teenagers.html">
+                <button class="btn" id="teenagers" type="button">Teenagers</button>
+            </a>
+        </div>
+            
         <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_js_dropdown.asp-->
             <button onclick="dropDownFunction()" class="dropbtn"></button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="#home">Parents Portal</a>
-              <a href="#about">Teenagers Portal</a>
+              <a class="parents-drop"  href="parents.html">Parents Portal</a>
+              <a href="teenagers.html">Teenagers Portal</a>
             </div>
         </div>
-    </div>
 
-    <div class="divider">
-        <div class="shape1"></div>
-        <div class="shape2"></div>
-        <div class="shape3"></div>
-        <div class="shape4"></div>
-    </div>
-    
-    <div class="nav-back">
-        <button class="btn-back" type="button">Back</button>
+        <div class="divider">
+            <div class="shape1"></div>
+            <div class="shape2"></div>
+            <div class="shape3"></div>
+            <div class="shape4"></div>
+        </div>
     </div>
 
     <div class="content">

@@ -10,32 +10,45 @@
 </head>
 <body>
 
-    <div class="header">
-        <div class="logo-container">
-            <img id="logo" src="assets/img/logo.png" alt="">
-            <h1 id="logo-name">Safely Social</h1>
-        </div>
-        
-        <div class="nav">
-            <button class="btn" id="parents" type="button">Parents</button>
-            <button class="btn" id="teenagers" type="button">Teenagers</button>
-        </div>
+   <div class="header">
+        <a href="index.html">
+            <div class="logo-container">
+                <img id="logo" src="assets/img/logo.png" alt="">
+                <h1 id="logo-name">Safely Social</h1>
+            </div>
+        </a>
 
+        <div class="nav">
+            <a class="nav-a" href="parents.html">
+                <button class="btn" id="parents" type="button">Parents</button>
+            </a>
+
+            <a class="nav-a" href="teenagers.html">
+                <button class="btn" id="teenagers" type="button">Teenagers</button>
+            </a>
+        </div>
+            
         <div class="dropdown"> <!--https://www.w3schools.com/howto/howto_js_dropdown.asp-->
             <button onclick="dropDownFunction()" class="dropbtn"></button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="#home">Parents Portal</a>
-              <a href="#about">Teenagers Portal</a>
+              <a class="parents-drop"  href="parents.html">Parents Portal</a>
+              <a href="teenagers.html">Teenagers Portal</a>
             </div>
+        </div>
+
+   
+
+
+
+        <div class="divider">
+            <div class="shape1"></div>
+            <div class="shape2"></div>
+            <div class="shape3"></div>
+            <div class="shape4"></div>
         </div>
     </div>
 
-    <div class="divider">
-        <div class="shape1"></div>
-        <div class="shape2"></div>
-        <div class="shape3"></div>
-        <div class="shape4"></div>
-    </div>
+ 
 
     <div class="content">
         <div class="welcome">
@@ -49,9 +62,11 @@
         <div class="nav-panels">
             <div class="parents-panel">
                 <img src="assets/img/tablet-parents.png" alt="image of parent and child">
-                <div class="parents">
-                    <button class="parents-panel-btn" type="button">Parents Portal</button>  
-                </div>
+                
+                <a class="parents" href="parents.html">
+                        <button class="parents-panel-btn" type="button">Parents Portal</button>  
+                </a>
+                
             </div>
 
             <div class="social-graphic-container">
@@ -60,9 +75,11 @@
 
             <div class="teenagers-panel">
                 <img src="assets/img/teenagers-tablet-img.png" alt="image of teenagers">
-                <div class="teenagers">
-                    <button class="teenagers-panel-btn" type="button">Teens Portal</button>
-                </div> 
+
+                <a class="teenagers" href="teenagers.html">
+                        <button class="teenagers-panel-btn" type="button">Teens Portal</button>
+                </a>
+                
             </div>    
         </div>
 
