@@ -50,6 +50,21 @@ h2{
   color: #3d3c4d;
 }
 
+.sub-heading{
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.heading{
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+
+
+
+
 
 
 #logo{
@@ -259,7 +274,7 @@ color: #efefef;
 
 
 .content{
-  margin: 50px 30px 20px 30px;
+  margin: 50px 300px 20px 300px;
   
 
   position: relative;
@@ -326,21 +341,36 @@ color: #efefef;
           display: none;
         }
       }
+
+      @media screen and (max-width: 1450px) {
+        .content {
+          margin: 50px 30px 20px 30px;
+        }
+      }
       
       @media screen and (max-width: 650px) {
         .nav-panels {
           display: none;
         }
+
+        .heading{
+          font-size: 50px;
+          margin:0px
+        }
+
+        .sub-heading{
+          font-size: 20px;
+        }
       }
 
 /* HOME PAGE */
 
-.welcome{
+.info{
     display: flex;
     justify-content: center;
 }
 
-    .welcome-box{
+    .info-box{
         width: 100vw;
         height: auto;
         margin-bottom: 20px;
@@ -366,17 +396,17 @@ color: #efefef;
         }
     }
 
-        .welcome-heading{
+        .info-heading{
            text-align: center;
            margin: 30px;
         }
 
-        .welcome-body{
+        .info-body{
             text-align: center;
             margin: 30px;
         }
 
-        .welcome-body2{
+        .info-body2{
             text-align: center;
             padding: 15px;
             font-size: 30px;
@@ -659,10 +689,366 @@ color: #efefef;
 
       /* PARENTS PAGE */
 
-      .heading{
-        text-align: center;
-        font-size: 70px;
+ 
+     .cdh-text{
+      margin: 40px;
+      padding: 20px;
+      border-radius: 100px;
+      background-color: white;
+      
      }
+
+     
+     .convo-container{
+      display: flex;
+      height: auto;
+      align-items: center;
+
+      margin-top: 40px;
+      border-radius: 40px;
+     }
+
+     #convo-img{
+      width: 100%;
+      border-radius: 20px;
+     }
+
+     #convo-btn{
+      width: 15vw;
+      border-radius: 10px;
+     
+     }
+
+     #convo-btn-img{
+      width: 15vw;
+      border-radius: 10px;
+      
+     }
+
+     .convo-left{
+      width: 50%;
+     }
+
+     .convo-right{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      text-align: center;
+  
+     }
+
+
+
+
+     .dangers-container{
+      display: flex;
+      height: auto;
+      align-items: center;
+      justify-content: end;
+
+      margin-top: 40px;
+      border-radius: 40px;
+     }
+
+     .dangers-left{
+      width: 50%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+     }
+
+     .dangers-right{
+      width: 50%;
+     }
+
+
+
+     #dangers-img{
+      width: 100%;
+      border-radius: 20px;
+     }
+
+     #dangers-btn{
+      width: 15vw;
+      border-radius: 10px;
+     
+     }
+
+     #dangers-btn-img{
+      width: 15vw;
+      border-radius: 10px;
+      
+     }
+
+
+
+     .help-container{
+      display: flex;
+      height: auto;
+      align-items: center;
+
+      margin-top: 40px;
+      border-radius: 40px;
+     }
+
+     .help-left{
+      width: 50%;
+     }
+
+     .help-right{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      text-align: center;
+  
+     }
+
+     #help-img{
+      width: 100%;
+      border-radius: 20px;
+     }
+
+     #help-btn{
+      width: 15vw;
+      border-radius: 10px;
+     
+     }
+
+     #help-btn-img{
+      width: 15vw;
+      border-radius: 10px;
+      
+     }
+
+     @media screen and (max-width: 650px) {
+      .convo-left {
+        display: none;
+      }
+
+      .convo-container{
+        justify-content: center;
+        
+      }
+
+      .convo-right{
+        width: 100%;
+      }
+
+      #convo-btn-img{
+        width: 30vw;
+      }
+
+      #convo-btn{
+        width: 30vw;
+      }
+    }
+
+     @media screen and (max-width: 650px) {
+      .dangers-left {
+        width: 100%;
+      }
+
+      .dangers-container{
+        justify-content: center;
+        
+      }
+
+      .dangers-right{
+        display: none;
+      }
+
+      #dangers-btn-img{
+        width: 30vw;
+      }
+
+      #dangers-btn{
+        width: 30vw;
+      }
+    }
+
+     @media screen and (max-width: 650px) {
+      .help-left {
+        display: none;
+      }
+
+      .help-container{
+        justify-content: center;
+        
+      }
+
+      .help-right{
+        width: 100%;
+      }
+
+      #help-btn-img{
+        width: 30vw;
+      }
+
+      #help-btn{
+        width: 30vw;
+      }
+
+
+    }
+
+    .info-convo-page{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     
+    }
+
+
+
+    #convo-page-img{
+     border-radius: 40px;
+     width: 50%;
+      
+    }
+
+    .info-box-convo-page{
+      padding: 20px;
+      width: 75%;
+      background-color: white;
+      border-radius: 40px;
+      margin-top: 20px;
+
+      
+      animation-name: pulse;
+      animation-duration: 1.0s;
+      animation-timing-function: ease;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+
+    }
+
+    .info-body-convo-page{
+      text-align: center;
+      
+      
+    }
+
+    .stepping-stone-left-container{
+      display: flex;
+      height: auto;
+      align-items: center;
+
+      margin-top: 40px;
+      border-radius: 40px;
+     }
+
+     #stepping-stone-left-img{
+      width: 100%;
+      border-radius: 20px;
+     }
+
+     .stepping-stone-left-left{
+      width: 50%;
+     }
+
+     .stepping-stone-left-right{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      text-align: center;
+  
+     }
+
+
+
+
+     .stepping-stone-right-container{
+      display: flex;
+      height: auto;
+      align-items: center;
+      justify-content: end;
+
+      margin-top: 40px;
+      border-radius: 40px;
+     }
+
+     .stepping-stone-right-left{
+      width: 50%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+     }
+
+     .stepping-stone-right-right{
+      width: 50%;
+     }
+
+     #stepping-stone-right-img{
+      width: 100%;
+      border-radius: 20px;
+     }
+
+     
+
+    @media screen and (max-width: 650px) {
+      .info-body-convo-page {
+        font-size: 16px;
+      }
+
+      #convo-page-img{
+        display:none
+      }
+
+      .info-box-convo-page{
+        margin: 0;;
+      }
+      .stepping-stone-left-container{
+        display: flex;
+        flex-direction: column;
+      }
+      .stepping-stone-right-container{
+        display: flex;
+        flex-direction: column;
+      }
+
+      #stepping-stone-left-img{
+        display: none;
+      }
+
+      #stepping-stone-right-img{
+        display: none;
+      }
+
+      .stepping-stone-left-right{
+        width: 100%;
+      }
+
+      .stepping-stone-right-left{
+        width: 100%;
+      }
+
+
+
+
+    }
+
+    
+    
+
+
+
+
+    
+
+      
+
+
 
      
   
