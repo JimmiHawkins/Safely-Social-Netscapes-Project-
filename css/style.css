@@ -179,7 +179,7 @@ background-color: #ffffff;
   background-color:#efefef;
   font-size: 25px;
   text-align: center;
-  width: 250px;
+  width: 205px;
  
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-top-right-radius: 10px;
@@ -194,6 +194,8 @@ background-color: #ffffff;
   text-decoration: none;
   display: block;
   padding: 10px;
+  font-size: 23px;
+  text-align: end;
   
 
 }
@@ -204,6 +206,8 @@ background-color: #ffffff;
 
 .parents-drop{
   border-bottom: #d4d4d4 solid 3px;
+ 
+  
 }
 
 .show {
@@ -246,6 +250,7 @@ background-color: #ffffff;
 
 .break{
   width: 100%;
+  height: 20px;
 }
 
 .red-line-top{
@@ -377,6 +382,7 @@ color: #efefef;
         #logo-name {
             display: none;
         }
+        
       }
 
       @media screen and (max-width: 950px) {
@@ -416,6 +422,14 @@ color: #efefef;
         .sub-heading{
           font-size: 20px;
         }
+
+        .heading2{
+          font-size: 50px;
+          margin-top: 30px;
+        }
+
+     
+        
       }
 
 /* HOME PAGE */
@@ -1085,12 +1099,27 @@ color: #efefef;
       }
     }
 
-    #teach-graphic{
+    .full-width-img-container{
+      display: flex;
       width: 100%;
+      justify-content: center;
+    
+    }
+
+    #full-width-img{
+      width: 75%;
+      border-radius: 20px;
+      align-items: center;
+
     }
 
     .more-info-grid{
-      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      
+      
+      
       
       
     }
@@ -1098,16 +1127,21 @@ color: #efefef;
     .more-info-grid-top{
       display: flex;
       flex-direction: row;
+      justify-content: center;
+    
     }
 
     .more-info-grid-bottom{
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      
     }
 
     .box{
-      width: 33vw;
-      height:23vw ;
+      
+      width: 20vw;
+      height:20vw ;
       background-color: white;
       margin: 10px;
       border-radius: 30px;
@@ -1136,5 +1170,123 @@ color: #efefef;
        
        
      }
+
+
+     .quiz-box{
+      background-color: #3d3c4d;
+      border-radius: 20px;
+      padding: 10px;
+     }
+
+     .sub-heading-quiz{
+      color: white;
+      font-family: 'Barriecito', cursive;
+      text-align: center;
+      font-size: 35px;
+     }
+
+     .quiz-desc-img-container{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      
+      
+     }
+
+     .quiz-img-container{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-direction: row;
+      margin-left: 20px;
+      margin-right: 20px;
+      
+      
+     }
+
+     #quiz-img{
+      
+      border-radius: 20px;
+      align-items: center;
+      margin: 10px;
+      width: 45%;
+      height: fit-content;
+     }
+
+    .quiz-desc-container{
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      margin-left: 20px;
+      width: 50%;
+    
+    }
+
+     .quiz-desc-box{
+      padding: 20px;
+      width: 100%;
+      height: fit-content;
+      background-color: white;
+      border-radius: 40px;
+      margin: 10px;
+      
+     
+  
+     }
+
+     .quiz-desc-body{
+      text-align: center;
+     }
+
+     .more-box-quiz{
+      margin: 10px;
+     }
+
+     .more-box-quiz :hover{
+      transition: 400ms;
+
+      background-color:#58b451;
+      color: #efefef;
+     }
+
+
+      @media screen and (max-width: 1700px) {
+        .quiz-desc-container {
+          flex-direction: row;
+          width: auto;
+        }
+
+        .quiz-desc-img-container{
+          flex-direction: column;
+        }
+
+        @media screen and (max-width: 650px) {
+          .quiz-desc-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+          }
+
+          .quiz-img-container{
+            flex-direction: column;
+            align-items: center;
+          }
+
+          #quiz-img{
+            width: 100%;
+          }
+
+          .sub-heading-quiz{
+            font-size: 20px;
+          }
+        }
+
+
+
+   
+
+     
 
   
