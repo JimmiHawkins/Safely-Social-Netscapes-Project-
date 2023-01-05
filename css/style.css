@@ -7,8 +7,10 @@
     box-sizing: border-box;
     border: 0;
     color: #efefef;  
-    font-family: helvetica;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 
 body{
   min-height: 100vh;
@@ -37,10 +39,8 @@ text-decoration: none;
 }
 
 h1{
-
-margin: 20px;
 font-size: 50px;
-
+font-family: 'Barriecito', cursive;
 color: #3d3c4d;
 
 }
@@ -54,16 +54,30 @@ h2{
   text-align: center;
   font-size: 35px;
   margin-bottom: 20px;
+  font-family: 'Barriecito', cursive;
 }
 
 .heading{
   text-align: center;
   font-size: 80px;
   color: white;
+
+}
+
+.heading2{
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  margin-top: 20px;
+
+}
+
+.title{
+
 }
 
 .back-btn{
-  padding: 17px 40px;
+  padding: 10px 40px;
   margin-top: 50px;
   margin-left: 50px;
 
@@ -112,7 +126,7 @@ height: 80px;
 }
 
 .btn-back{
-padding: 17px 40px;
+padding: 10px 40px;
 margin: 40px 40px 0 40px;
 
 font-size: 20px;
@@ -234,6 +248,15 @@ background-color: #ffffff;
   width: 100%;
 }
 
+.red-line-top{
+  border-top-left-radius: 130px;
+  border-top-right-radius: 130px;
+  height: 10px;
+  width: 100%;
+
+  background-color: #f5476d
+}
+
 
 .divider{
   display: flex;
@@ -246,6 +269,19 @@ background-color: #ffffff;
  
   animation-name: divider;
   animation-duration: 1s;
+}
+
+.divider-content{
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+ 
+  z-index: 1000;
+
 }
 
   @keyframes divider{
@@ -580,6 +616,7 @@ color: #efefef;
         padding: 30px;
         text-align: center;
         width: 40vw;
+        margin-right: 10px;
         
         border-radius: 40px;
         background-color: #f5476d;
@@ -595,6 +632,7 @@ color: #efefef;
         padding: 30px;
         width: 40vw;
         text-align: center;
+        margin-left: 10px;
 
         border-radius: 40px;
         background-color: #aad1eb;  
@@ -617,12 +655,12 @@ color: #efefef;
 
     .more-graphic{
         width: 10%;
+        margin-right: 10px;
     }
 
     .more-box :hover{
         transition: 400ms;
 
-        font-size: 32px;
         background-color:#3d3c4d;
         color: #efefef;
     }
@@ -723,8 +761,6 @@ color: #efefef;
       display: flex;
       height: auto;
       align-items: center;
-
-      margin-top: 40px;
       border-radius: 40px;
      }
 
@@ -747,12 +783,14 @@ color: #efefef;
 
      .convo-left{
       width: 50%;
+      
      }
 
      .convo-right{
       width: 50%;
       display: flex;
       flex-direction: column;
+      margin-top: 30px;
       
       align-items: center;
       text-align: center;
@@ -766,14 +804,13 @@ color: #efefef;
       display: flex;
       height: auto;
       align-items: center;
-      justify-content: end;
-
-      margin-top: 40px;
+      justify-content: center;
       border-radius: 40px;
      }
 
      .dangers-left{
       width: 50%;
+      margin-top: 30px;
 
       display: flex;
       flex-direction: column;
@@ -811,12 +848,12 @@ color: #efefef;
       height: auto;
       align-items: center;
 
-      margin-top: 40px;
       border-radius: 40px;
      }
 
      .help-left{
       width: 50%;
+      
      }
 
      .help-right{
@@ -826,6 +863,7 @@ color: #efefef;
       
       align-items: center;
       text-align: center;
+      margin-top: 30px;
   
      }
 
@@ -939,14 +977,6 @@ color: #efefef;
       border-radius: 40px;
       margin-top: 20px;
 
-      
-      animation-name: pulse;
-      animation-duration: 1.0s;
-      animation-timing-function: ease;
-      animation-direction: alternate;
-      animation-iteration-count: infinite;
-      animation-play-state: running;
-
     }
 
     .info-body-convo-page{
@@ -960,13 +990,14 @@ color: #efefef;
       height: auto;
       align-items: center;
 
-      margin-top: 40px;
       border-radius: 40px;
+      margin: 20px;
      }
 
      #stepping-stone-left-img{
       width: 100%;
       border-radius: 20px;
+      
      }
 
      .stepping-stone-left-left{
@@ -992,8 +1023,8 @@ color: #efefef;
       align-items: center;
       justify-content: end;
 
-      margin-top: 40px;
       border-radius: 40px;
+      margin: 20px;
      }
 
      .stepping-stone-right-left{
@@ -1076,10 +1107,34 @@ color: #efefef;
 
     .box{
       width: 33vw;
-      height:20vw ;
-      background-color: #ddd;
+      height:23vw ;
+      background-color: white;
       margin: 10px;
       border-radius: 30px;
     }
+
+    
+
+    .list-help{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      
+     }
+ 
+     .list-help-box{
+       padding: 20px;
+       width: 75%;
+       background-color: white;
+       border-radius: 40px;
+       margin-top: 20px;
+ 
+     }
+ 
+     .list-help-body{
+       text-align: center;
+       
+       
+     }
 
   
