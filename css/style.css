@@ -1488,6 +1488,131 @@ color: #efefef;
   }
 }
 
+.info-body2-safe{
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+  background-color: #f5476d;
+  color: #ffffff;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.talk-container{
+  background-color: white;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  
+
+  
+
+
+}
+
+.talk-box{
+ 
+  width: fit-content;
+  height: 300px;
+  background-color: #aad1eb;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  
+  
+  
+}
+
+.talk-left-container{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.talk-right-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.talk-box-img-container{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+ 
+
+}
+
+#talk-img{
+  width: 100%;
+  margin: 10px;
+  border-radius: 20px;
+
+}
+
+.talk-box-text-container{
+  width: 75%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+}
+
+#talk-sub-heading{
+  font-size: 20px;
+  margin: 0;
+}
+
+#talk-sub-heading-invis{
+  color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  margin: 0;
+}
+
+#talk-body{
+  margin: 40px;
+  font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .talk-container{
+    flex-direction: column;
+    align-items: center;
+   
+    
+  }
+  #talk-sub-heading{
+   display: none;
+  }
+  
+  #talk-sub-heading-invis{
+    display: none;
+  }
+
+  #break-invis{
+    display: none;
+  }
+
+  #safe-page{
+    margin-top: 20px;
+  }
+}
+
+
 
 
 
