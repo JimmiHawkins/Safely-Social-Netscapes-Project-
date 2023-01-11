@@ -237,7 +237,6 @@ h2{
   border-top-right-radius: 130px;
   height: 10px;
   width: 25vw;
- ;
   background-color: #aad1eb;
 }
 .nav-back :hover{
@@ -1106,9 +1105,19 @@ h2{
 #img-left{
   width: 100%;
 }
+
 #img-right{
   width: 100%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
+
+#img-right-2{
+  width: 100%;
+
+}
+
+
 .steps-box{
   padding: 20px;
   width: 100%;
@@ -1141,7 +1150,7 @@ h2{
   }
   }
 
-/*SAFE SOACE PAGE*/
+/*SAFE SPACE PAGE*/
 
 .info-body2-safe{
   text-align: center;
@@ -1160,28 +1169,35 @@ h2{
   height: auto;
   border-radius: 20px;
   display: flex;
+  
 }
 .talk-box{
-  width: fit-content;
-  height: 300px;
+  width: 95%;
+  height: 400px;
   background-color: #aad1eb;
   margin: 20px;
   border-radius: 20px;
   display: flex;
+  
+  
 }
 .talk-left-container{
   width: 100%;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  
 }
 .talk-right-container{
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+ 
 }
 .talk-box-img-container{
-  width: 25%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -1190,13 +1206,15 @@ h2{
   width: 100%;
   margin: 10px;
   border-radius: 20px;
+  
 }
 .talk-box-text-container{
-  width: 75%;
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: end;
 }
 #talk-sub-heading{
   font-size: 20px;
@@ -1208,14 +1226,19 @@ h2{
   margin: 0;
 }
 #talk-body{
-  margin: 40px;
+  margin: 20px;
   font-size: 16px;
+}
+
+#safe-space-btn{
+  margin-left: 20px;
 }
 
   /* SAFE SPACE RE-SIZE*/
 
   @media screen and (max-width: 900px) {
     .talk-container{
+        display: flex;
         flex-direction: column;
         align-items: center;
   }
@@ -1231,4 +1254,22 @@ h2{
     #safe-page{
         margin-top: 20px;
   }
+
+  #full-width-img{
+    display: none;
+  }
 }
+
+  .talk-box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .talk-box-text-container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
