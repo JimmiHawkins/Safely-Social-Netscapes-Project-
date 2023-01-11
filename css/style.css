@@ -480,6 +480,10 @@ h2{
   transition: 400ms;
   background-color:#aad1eb;
 }
+
+.more-box{
+  width: 10%;
+}
 .bubbles{
   display: flex;
   justify-content: center;
@@ -553,6 +557,12 @@ h2{
   color: #3d3c4d;
   background-color: white;
   border-radius: 100px;
+}
+
+#more-grid-btn{
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
   /* HOME RE-SIZE */
@@ -870,12 +880,19 @@ h2{
 .more-info-grid-top{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 .more-info-grid-bottom{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
+  align-items: center;
+}
+
+#more-grid-img{
+  width: 100%;
+  border-radius: 20px;
 }
 .box{
   width: 20vw;
@@ -973,7 +990,7 @@ h2{
 
   /* HELP YOUR CHILD RE-SIZE */
 
-  @media screen and (max-width: 1700px) {
+  @media screen and (max-width: 1920px) {
     .quiz-desc-container {
         flex-direction: row;
         width: auto;
@@ -982,6 +999,7 @@ h2{
         flex-direction: column;
   }
   }
+  
   @media screen and (max-width: 650px) {
     .quiz-desc-container {
         flex-direction: column;
@@ -1021,8 +1039,9 @@ h2{
   margin-top: 20px;
 }
 #teen-btn-img{
-  width: 100%;
+  width: 20vw;
   border-radius: 20px;
+  
 }
 #teenagers-btn{
   border-radius: 20px;
